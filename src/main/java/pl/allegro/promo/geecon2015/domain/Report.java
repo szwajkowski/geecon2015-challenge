@@ -9,6 +9,12 @@ public class Report implements Iterable<ReportedUser> {
 
     private final List<ReportedUser> users = new ArrayList<>();
 
+    public Report() {}
+
+    public Report(List<ReportedUser> reportedUsers) {
+        users.addAll(reportedUsers);
+    }
+
     public void add(ReportedUser user) {
         this.users.add(user);
     }
